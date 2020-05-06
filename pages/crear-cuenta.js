@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 
 import { css } from '@emotion/core'
 
-import Layout from './layouts/Layout';
-import { Formulario, Campo, InputSubmit, Error } from './ui/Formulario';
+import Layout from '../components/layouts/Layout';
+import { Formulario, Campo, InputSubmit, Error } from '../components/ui/formulario';
 
 //? iportando el error
 import Router from 'next/router';
@@ -12,7 +12,7 @@ import Router from 'next/router';
 import validarCrearCuenta from '../validators/validarCrearCuenta';
 
 //?Importando nuestro hook personalizado
-import useValidation from './hooks/useValidation';
+import useValidation from '../hooks/useValidation';
 
 //? modulo de firebase 
 import firebase from "../firebase";
@@ -29,7 +29,6 @@ const STATE_INITIAL = {
 }
 
 const CrearCuenta = () => {
-
 
   const [error, guardarError] = useState(false)
 

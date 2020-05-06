@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from '@emotion/styled';
 //?importando la librar para poder ver hace cuatno se publico
-import { es } from 'date-fns/locale'
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+import { es } from 'date-fns/locale'
 //? enrutador
 import Link from 'next/link';
 

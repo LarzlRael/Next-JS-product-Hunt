@@ -26,7 +26,7 @@ const Layout = (props) => {
                 body{
                     font-size:1.6rem;
                     line-height:1.5;
-                    font-family:'Pt Sans',serif
+                    font-family:'Roboto',serif
                     h1,h2,h3{
                         margin: 0.0 2rem 0;
                         line-height:1.5;
@@ -47,13 +47,19 @@ const Layout = (props) => {
                     a{
                         text-decoration:none
                     }
+                    img{
+                        max-width:100%;
+                    }
+                    p{
+                        font-family:'Roboto'
+                    }
                 }
             `}
             />
             <Header />
             {/* Usando el componente header */}
             <Head>
-                <html lang="5" />
+                
                 <title>Product Hunt Firebase y next</title>
                 {/* Normalize */}
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map" />

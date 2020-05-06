@@ -1,18 +1,34 @@
-import styled from '@emotion/styled';
 
-import Layout from './layouts/Layout';
-const Heading = styled.h1`
-  color:red;
-`
+import Layout from '../components/layouts/Layout';
+import { useEffect, useState, useContext } from 'react';
+import Producto from '../components/layouts/Producto';
+import useProductos from '../hooks/useProductos';
 
-export default function Populares() {
+const Populares = () => {
+
+  const { productos } = useProductos('votos');
+
+
   return (
     <div className="container">
       <Layout>
-        <h1>populares</h1>
+        <div className="listado-productos">
+          <div className="contenedor">
+            <div className="bg-white">
+              {productos.map(producto => (
+                <Producto
+                  key={producto.id}
+                  producto={producto}
+                />
+
+              ))}
+            </div>
+          </div>
+        </div>
       </Layout>
 
     </div>
   )
 }
 
+export default Populares;

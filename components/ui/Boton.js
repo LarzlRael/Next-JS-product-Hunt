@@ -8,6 +8,9 @@ const Boton = styled.a`
     margin-right:1rem;
     background-color: ${props => props.bgColor ? '#da552f' : 'white'};
     color :${props => props.bgColor ? 'white' : '#000'};
+    display:block;
+    margin: 2rem auto;
+    text-align:center;
     &:last-of-type{
         margin-right:0;
     }
